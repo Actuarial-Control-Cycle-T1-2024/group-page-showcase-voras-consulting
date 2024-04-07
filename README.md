@@ -34,6 +34,7 @@ The second part of the model simulated new policyholders that bought a policy as
 In both parts of the model, premiums and expenses are collected at the start of the year and liabilities added upon a policyholder’s death. These are then summed to give the final revenue, expense and liabilities figures.
 
 Policyholder premiums were determined using the equivalence principle, by considering the present value of future expected benefit payments. The collection of premiums for the two policy types offered by SuperLife were as follows:
+
 T20: 20-year level term - annual premium payments at the beginning of each year for the duration of the policy or, until year of death.
 
 SPWL: Single Premium Whole Life - single premium paid at the issue date.
