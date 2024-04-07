@@ -107,10 +107,64 @@ Legal Considerations: In the transition process, consult with external lawyers a
 
 # Sensitivity Analysis
 
-# Data sources and Limitations:
+Sensitivity analysis was performed by adjusting the key assumptions mentioned previously in the
+report. Comparing the results to our base scenario revealed the following:
+
+  - An increase in the inflation rate to 5% would result in a decrease in the value of premium payments in the long term (over 20 years) by 0.6% p.a. and increase the cost of claims. Due to fixed premiums, the immediate impact was negligible, however, there were more significant effects in the long term.
+  - An increase in interest rates to 4% improved the present value of future premium income thereby increasing the profitability of SuperLife by 2.3%. Conversely, a decrease in interest rates led to a drop in SuperLife’s finances in the long term.
+  - A 1% reduction in mortality rates decreased claim expenses by 1.3% in the short term, thereby improving profitability. In the long term, the liability duration would be extended with longer policyholder lifespans. This can be mitigated through an enhanced reputation, leading to higher sales.
+
+The proposed Health Incentive Program demonstrated a reduction in mortality by an average of 6,700 deaths per year over the past 20 years. This empirical evidence with consistent mortality reduction highlights the program's direct impact on improving health outcomes. This allows for the confident assertion of a 95% degree of certainty in its effectiveness. Furthermore, the focus on healthy behaviours known to decrease mortality rates reinforces its potential success.
+
+Additionally, the reduction in mortality rate through initiatives such as the smoking cessation program suggests policyholders are generally healthier people. This improvement in policyholder health allows SuperLife to underwrite policies for a higher value of benefits due to the reduced risk of early claims. Hence, due to the 17% reduction in mortality rate, there is a 95% degree of certainty that the value of benefits derived from policies sold with the proposed program will exceed the value of benefits derived from policies sold without the proposed program.
 
 
+# Data Sources and Limitations:
 
+Superlife Inforce Dataset (Source: SOA) - Dataset describing the 978582 policies under superlife.
+  - Completeness: Some of the dataset had missing data entries, potentially leading to miscalculations. Thorough processing and cleaning of data was conducted prior to analysis.
+  - Limited scope: Limited factors which play into mortality were included within this dataset, leading to limited factors considered during analysis of mortality, and interventions. Furthermore, causes of death were limited to high-level categories, preventing further investigation into correlations involving death.
+
+Lumaria Encyclopedia Entry (Source: SOA) - Key statistics regarding Lumaria, including demographic, economic, social, cultural, and more.
+  - Surface level statistics: Majority of statistics are vague and only offer general insight into Lumaria’s environment. Without providing insights and breakdowns into specific demographics and circumstances, it is difficult to draw accurate conclusions from data. As such, external data was used to supplement this data.
+
+Lumaria Mortality Table (Source: SOA) - General population mortality for Lumaria
+  - High level mortality: The mortality table does not allow for differing mortality across various factors such as gender, smoking status, underwriting status, and more - all which have a significant impact on the mortality of an individual, and would need to be accounted for during pricing.
+
+SuperLife Interventions Dataset (Source: SOA) - Description of interventions
+  - High variation: Mortality impacts and costs of given interventions is vague with a high potential range. This results in strong assumptions having to be set regarding the impacts of implementing the interventions into the program.
+
+Economic Data (Source: SOA) - Lumarian economic data, including inflation and spot rates.
+  - Time frame: Does not project data past 2023 - with pricing requiring economic values years into the future to account for life expectancy of policyholders. This was accounted for through historical averages.
+  - Lack of context: Many factors may influence future inflation and spot rates. For simplicity, we assume such factors have been already accounted for in historical data.
+
+Smoker Status Data (Source - ABS) - Australian smoking data - number/proportion of Australians aged over 15, split between male and female.
+  - Sampling bias: Data collected through the National Health Survey - where the methodology involves sending out online forms which participants voluntarily participated in. As surveys were sent out at random, and there is an extensive list of demographics to be excluded, this may result in bias in the results.
+  - Self reporting bias: As data is self reported through an online form, individuals may misrepresent their true habits, due to personal biases, societal stigma, and other pressures.
+  - Australian data: Data may not accurately reflect trends from Lumaria - however, given data is only used as a comparison between male and female factors, no material implications.
+
+Smoker Mortality Data (Source: J Lariscy, R Hummer, R Rogers - using US National Health Interview Survey Linked Mortality Files)
+  - American smoking mortality data - deaths from smoking attributed causes of death for smokers, former smokers, and non-smokers.
+  - Self reporting bias: As above.
+  - Death Causality: The development of these diseases could potentially be caused or influenced by other lifestyle factors other than smoking - the exact impact of smoking is not quantified.
+  - American data: Data may not accurately reflect trends from Lumaria - however, given data is only used as a comparison between male and female factors, no material implications.
+
+
+# References
+
+Cancer prevention & early detection (no date) Cancer Prevention & Early Detection | American Cancer Society. Available at: https://www.cancer.org/research/cancer-facts-statistics/cancer-prevention-early-detection.html (Accessed: 18 March 2024).
+
+Cancer screening programs: Quarterly Data, about (no date) Australian Institute of Health and Welfare. Available at: https://www.aihw.gov.au/reports/cancer-screening/national-cancer-screening-programs-participation/contents/about (Accessed: 18 March 2024). 
+
+Mullen, K.A. et al. (2017) Effectiveness of a hospital-initiated smoking cessation programme: 2-year health and healthcare outcomes, Tobacco Control. Available at: https://tobaccocontrol.bmj.com/content/26/3/293 (Accessed: 11 March 2024). 
+
+Smoking cessation: Fast facts (2022) Centers for Disease Control and Prevention. Available at: https://www.cdc.gov/tobacco/data_statistics/fact_sheets/cessation/smoking-cessation-fast-facts/index.html (Accessed: 10 March 2024).
+
+Smoking cessation (no date) Australian Journal of General Practice. Available at: https://www1.racgp.org.au/ajgp/2020/august/smoking-cessation-1 (Accessed: 20 March 2024).
+
+AUSTRALIAN BUREAU OF STATISTICS (2022). Insights into Australian smokers, 2021-22 | Australian Bureau of Statistics. [online] www.abs.gov.au. Available at: https://www.abs.gov.au/articles/insights-australian-smokers-2021-22. (Accessed: 11 March 2024).
+
+Lariscy, J.T., Hummer, R.A. and Rogers, R.G. (2018). Cigarette Smoking and All-Cause and Cause-Specific Adult Mortality in the United States. Demography, 55(5), pp.1855–1885. doi:https://doi.org/10.1007/s13524-018-0707-2. (Accessed: 18 March 2024).
 
 
 
